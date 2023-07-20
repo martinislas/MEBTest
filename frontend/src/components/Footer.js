@@ -1,60 +1,44 @@
-import "bulma/css/bulma.min.css";
-import {
-  Block,
-  Columns,
-  Container,
-  Content,
-  Footer,
-  Icon,
-  Level,
-} from "react-bulma-components";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
+import "../index.css";
 function SiteFooter() {
   return (
-    <Footer>
-      <Container>
-        <Level>
-          <Level.Side align="left">
-            <Level.Item>
-              <strong>MEB Resources</strong>
-            </Level.Item>
-          </Level.Side>
-          <Level.Side align="right">
-            <Level.Item>
-              Follow Us
-              <Icon>
-                <a href="https://facebook.com/MEBResources">
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-              </Icon>
-              <Icon>
-                <a href="https://www.instagram.com/mebresources">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </Icon>
-            </Level.Item>
-          </Level.Side>
-        </Level>
-        <hr />
-        <Columns>
-          <Columns.Column size="one-quarter">
-            <Block>
-              <strong>Contact Us</strong>
-            </Block>
-            <Block>507-799-0076 / 507-313-4804</Block>
-            <Block>info@mebresources.com</Block>
-          </Columns.Column>
-        </Columns>
-        <hr />
-        <Content style={{ textAlign: "center" }}>
-          <FontAwesomeIcon icon={faCopyright} /> 2023
-        </Content>
-      </Container>
-    </Footer>
+    
+    <footer>
+			
+			
+    <section>
+      
+      <div>
+        <h2>MEB Resources</h2>
+        
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>507-799-0076 / 507-313-4804</p>
+        <p><a href="mailto:info@mebresources.com" target="_blank"><i class="fa-solid fa-envelope"></i> info@mebresources.com</a></p>
+        
+      </div>
+      <div>
+        <h3>Follow us</h3>
+        <ul class="socialMedia">
+          <li><a href="https://www.linkedin.com/company/meb-resources-llc/about/"><i class="icon fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com/MEBResources" target="_blank" ><i class="icon fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/mebresources/" target="_blank" ><i class="icon fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      
+    </section>
+    
+  </footer>	
+
   );
 }
 
 export default SiteFooter;
+
+
+

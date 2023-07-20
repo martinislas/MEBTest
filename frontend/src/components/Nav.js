@@ -1,24 +1,34 @@
-import "bulma/css/bulma.min.css";
+
 import { Navbar } from "react-bulma-components";
 
+import "../index.css"
+
 function Nav() {
+  
   return (
-    <Navbar color="primary" fixed="top">
-      <Navbar.Brand>
-        <Navbar.Item href="/">
-          <strong>MEB Resources</strong>
-        </Navbar.Item>
-      </Navbar.Brand>
-      <Navbar.Menu>
-        <Navbar.Container align="right">
-          <Navbar.Item href="/">Home</Navbar.Item>
-          <Navbar.Item href="/contact">Contact Us</Navbar.Item>
-          {/* <Navbar.Item href="/services">Services</Navbar.Item> */}
-          <Navbar.Item href="/jobs">Jobs</Navbar.Item>
-          <Navbar.Item href="/about">About Us</Navbar.Item>
-        </Navbar.Container>
-      </Navbar.Menu>
-    </Navbar>
+    <nav>
+        <div class="header">
+          <h3>MEB Resources</h3>
+        </div>
+          <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu"></input>
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+          </label>
+          <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+              <li>MEB Resources <span>Your Movile Employment resource</span></li>
+              <li><a href="/" target="_blank">Home</a></li>
+              <li><a href="/contact" target="_blank">Contact</a></li>
+              <li><a href="/#one">About</a></li>
+              <li><a href="/jobs" target="_blank">Jobs</a></li>
+
+            
+            </ul>
+          </div>
+  
+    </nav>
   );
 }
 
